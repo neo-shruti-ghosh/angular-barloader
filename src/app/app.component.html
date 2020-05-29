@@ -1,0 +1,6 @@
+<button (click)="loaderText = 'Processing..'">Load Loader</button>
+
+<div id="loader-container">
+  <generic-barloader [myText]="loaderText" *ngIf="undefined != loaderText" 
+  (closeMeEvent)="loaderText = null"></generic-barloader>
+</div>
